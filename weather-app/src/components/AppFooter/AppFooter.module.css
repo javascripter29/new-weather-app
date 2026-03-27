@@ -1,0 +1,23 @@
+.footer {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid var(--border);
+  padding: 16px 0;
+}
+
+:global(html[data-theme="dark"]) .footer {
+  background: rgba(24, 82, 173, 0.55);
+}
+
+.inner {
+  width: 1120px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+  text-align: center;
+}
+
+.copyright {
+  color: var(--text-muted);
+  font-size: 14px;
+}

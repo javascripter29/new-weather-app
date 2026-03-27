@@ -1,0 +1,140 @@
+.root {
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.leftCol {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.rightCol {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.mainCard {
+  padding: 16px;
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+}
+
+.mainTop {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  align-items: start;
+}
+
+.temp {
+  font-size: 56px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin: 0;
+}
+
+.desc {
+  margin: 4px 0 0;
+  font-size: 16px;
+  color: var(--text-muted);
+}
+
+.iconRow {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.condIcon {
+  width: 58px;
+  height: 58px;
+}
+
+.subTemps {
+  margin: 6px 0 0;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.blocksGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.block {
+  padding: 12px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.35);
+  transition: all 200ms ease;
+  animation: slideUp 400ms ease both;
+}
+
+:global(html[data-theme="dark"]) .block {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.blockTitle {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.blockValue {
+  margin-top: 6px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.fadeIn300 {
+  animation: fadeIn300 300ms ease both;
+}
+
+@keyframes fadeIn300 {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fadeIn300 {
+    animation: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: 0.32fr 0.68fr;
+    align-items: start;
+  }
+
+  .mainCard {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,79 @@
+.wrap {
+  width: 100%;
+}
+
+.day {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+:global(html[data-theme='dark']) .day {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.day + .day {
+  margin-top: 10px;
+}
+
+.dayMeta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.dow {
+  color: var(--text-muted);
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.dateDM {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.icon {
+  width: 46px;
+  height: 46px;
+}
+
+.temps {
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+}
+
+.min {
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.max {
+  font-weight: 800;
+}
+
+.pop {
+  color: var(--text-muted);
+  font-size: 12px;
+  white-space: nowrap;
+}
+

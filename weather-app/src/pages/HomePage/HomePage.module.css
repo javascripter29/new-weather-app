@@ -1,0 +1,37 @@
+.page {
+  width: 100%;
+}
+
+.title {
+  margin: 8px 0 4px;
+  text-align: left;
+}
+
+.geoRow {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.favoritesRow {
+  margin-top: 8px;
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.favoriteBtn {
+  border: 1px solid var(--border);
+  background: var(--bg-elev);
+  color: var(--text);
+  padding: 8px 10px;
+  border-radius: 12px;
+  white-space: nowrap;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+}
+
+:global(html[data-theme='dark']) .favoriteBtn {
+  background: rgba(255, 255, 255, 0.04);
+}
+
