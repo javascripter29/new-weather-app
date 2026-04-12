@@ -1,8 +1,8 @@
 import axios from "axios";
 
 const OWM_API_KEY = import.meta.env.VITE_OWM_API_KEY;
-const OWM_BASE_URL = import.meta.env.VITE_OWM_BASE_URL;
-const OWM_GEO_URL = import.meta.env.VITE_OWM_GEO_URL;
+const OWM_BASE_URL = "https://api.openweathermap.org/data/2.5";
+const OWM_GEO_URL = "https://api.openweathermap.org/geo/1.0";
 
 const weatherClient = axios.create({
   baseURL: OWM_BASE_URL,
