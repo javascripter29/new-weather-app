@@ -14,7 +14,25 @@ if (!fs.existsSync(distPath)) {
   process.exit(1);
 }
 
-app.use(express.static(distPath));
+app.use((req, res, next) => {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Methods", "GET, HEAD, OPTIONS");
+  res.setHeader("Access-Control-Allow-Headers", "*");
+  next();
+});
+
+app.use(
+  express.static(distPath, {
+    setHeaders(res, filePath) {
+      if (filePath.endsWith(".js")) {
+        res.setHeader("Content-Type", "application/javascript; charset=utf-8");
+      }
+      if (filePath.endsWith(".css")) {
+        res.setHeader("Content-Type", "text/css; charset=utf-8");
+      }
+    },
+  }),
+);
 
 app.use((req, res) => {
   res.sendFile(path.join(distPath, "index.html"));

@@ -1,0 +1,100 @@
+2026-04-12T11:37:07.479592Z node_modules/antd/es/modal/shared.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/modal/shared.js" was ignored.
+2026-04-12T11:37:07.49676128Z node_modules/antd/es/calendar/Header.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/calendar/Header.js" was ignored.
+2026-04-12T11:37:07.504517716Z node_modules/antd/es/color-picker/components/ColorTrigger.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/color-picker/components/ColorTrigger.js" was ignored.
+2026-04-12T11:37:07.51303181Z node_modules/antd/es/input/OTP/OTPInput.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/input/OTP/OTPInput.js" was ignored.
+2026-04-12T11:37:07.523976509Z node_modules/antd/es/skeleton/Avatar.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/skeleton/Avatar.js" was ignored.
+2026-04-12T11:37:07.524733066Z node_modules/antd/es/skeleton/Input.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/skeleton/Input.js" was ignored.
+2026-04-12T11:37:07.525459832Z node_modules/antd/es/skeleton/Button.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/skeleton/Button.js" was ignored.
+2026-04-12T11:37:07.526146358Z node_modules/antd/es/skeleton/Paragraph.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/skeleton/Paragraph.js" was ignored.
+2026-04-12T11:37:07.526524517Z node_modules/antd/es/skeleton/Node.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/skeleton/Node.js" was ignored.
+2026-04-12T11:37:07.527055829Z node_modules/antd/es/skeleton/Title.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/skeleton/Title.js" was ignored.
+2026-04-12T11:37:07.527352545Z node_modules/antd/es/skeleton/Image.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/skeleton/Image.js" was ignored.
+2026-04-12T11:37:07.529972075Z node_modules/antd/es/menu/OverrideContext.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/menu/OverrideContext.js" was ignored.
+2026-04-12T11:37:07.530456706Z node_modules/antd/es/progress/Steps.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/progress/Steps.js" was ignored.
+2026-04-12T11:37:07.532091473Z node_modules/antd/es/progress/Circle.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/progress/Circle.js" was ignored.
+2026-04-12T11:37:07.535658814Z node_modules/antd/es/form/FormItem/ItemHolder.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/form/FormItem/ItemHolder.js" was ignored.
+2026-04-12T11:37:07.537018945Z node_modules/antd/es/form/FormItem/StatusProvider.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/form/FormItem/StatusProvider.js" was ignored.
+2026-04-12T11:37:07.554497293Z node_modules/antd/es/tooltip/UniqueProvider/MotionContent.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/tooltip/UniqueProvider/MotionContent.js" was ignored.
+2026-04-12T11:37:07.560634462Z node_modules/antd/es/color-picker/components/ColorPresets.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/color-picker/components/ColorPresets.js" was ignored.
+2026-04-12T11:37:07.561627095Z node_modules/antd/es/spin/Indicator/Looper.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/spin/Indicator/Looper.js" was ignored.
+2026-04-12T11:37:07.571885558Z node_modules/antd/es/drawer/DrawerPanel.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/drawer/DrawerPanel.js" was ignored.
+2026-04-12T11:37:07.574956078Z node_modules/antd/es/button/ButtonGroup.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/button/ButtonGroup.js" was ignored.
+2026-04-12T11:37:07.619735476Z node_modules/antd/es/splitter/SplitBar.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/splitter/SplitBar.js" was ignored.
+2026-04-12T11:37:07.6273645Z node_modules/antd/es/timeline/useItems.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/timeline/useItems.js" was ignored.
+2026-04-12T11:37:07.629751014Z node_modules/antd/es/statistic/Number.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/statistic/Number.js" was ignored.
+2026-04-12T11:37:07.645626345Z node_modules/antd/es/tree/utils/dropIndicator.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/tree/utils/dropIndicator.js" was ignored.
+2026-04-12T11:37:07.734039495Z node_modules/antd/es/badge/SingleNumber.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/badge/SingleNumber.js" was ignored.
+2026-04-12T11:37:07.745441704Z node_modules/antd/es/typography/Editable.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/typography/Editable.js" was ignored.
+2026-04-12T11:37:07.747122363Z node_modules/antd/es/typography/Base/CopyBtn.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/typography/Base/CopyBtn.js" was ignored.
+2026-04-12T11:37:07.748570085Z node_modules/antd/es/typography/Base/Ellipsis.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/typography/Base/Ellipsis.js" was ignored.
+2026-04-12T11:37:07.758241925Z node_modules/antd/es/modal/components/NormalCancelBtn.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/modal/components/NormalCancelBtn.js" was ignored.
+2026-04-12T11:37:07.758701136Z node_modules/antd/es/modal/components/NormalOkBtn.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/modal/components/NormalOkBtn.js" was ignored.
+2026-04-12T11:37:07.772904839Z node_modules/antd/es/color-picker/components/ColorClear.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/color-picker/components/ColorClear.js" was ignored.
+2026-04-12T11:37:07.783130651Z node_modules/antd/es/collapse/CollapsePanel.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/collapse/CollapsePanel.js" was ignored.
+2026-04-12T11:37:07.789496936Z node_modules/antd/es/date-picker/generatePicker/generateRangePicker.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/date-picker/generatePicker/generateRangePicker.js" was ignored.
+2026-04-12T11:37:07.827025379Z node_modules/antd/es/modal/ConfirmDialog.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/modal/ConfirmDialog.js" was ignored.
+2026-04-12T11:37:07.845139421Z node_modules/antd/es/form/FormItemLabel.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/form/FormItemLabel.js" was ignored.
+2026-04-12T11:37:07.8468293Z node_modules/antd/es/form/FormItemInput.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/form/FormItemInput.js" was ignored.
+2026-04-12T11:37:07.915355978Z node_modules/antd/es/spin/Indicator/Progress.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/spin/Indicator/Progress.js" was ignored.
+2026-04-12T11:37:08.014964903Z node_modules/antd/es/color-picker/ColorPickerPanel.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/color-picker/ColorPickerPanel.js" was ignored.
+2026-04-12T11:37:08.017956181Z node_modules/antd/es/skeleton/Element.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/skeleton/Element.js" was ignored.
+2026-04-12T11:37:08.036017881Z node_modules/antd/es/date-picker/generatePicker/generateSinglePicker.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/date-picker/generatePicker/generateSinglePicker.js" was ignored.
+2026-04-12T11:37:08.038763764Z node_modules/antd/es/progress/Line.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/progress/Line.js" was ignored.
+2026-04-12T11:37:08.112196233Z node_modules/antd/es/_util/wave/WaveEffect.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/_util/wave/WaveEffect.js" was ignored.
+2026-04-12T11:37:08.255812849Z node_modules/@ant-design/icons/es/components/AntdIcon.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/@ant-design/icons/es/components/AntdIcon.js" was ignored.
+2026-04-12T11:37:08.287427458Z node_modules/antd/es/date-picker/generatePicker/useSuffixIcon.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/date-picker/generatePicker/useSuffixIcon.js" was ignored.
+2026-04-12T11:37:08.325530074Z node_modules/antd/es/modal/components/ConfirmCancelBtn.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/modal/components/ConfirmCancelBtn.js" was ignored.
+2026-04-12T11:37:08.329980136Z node_modules/antd/es/modal/components/ConfirmOkBtn.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/modal/components/ConfirmOkBtn.js" was ignored.
+2026-04-12T11:37:08.335496381Z node_modules/antd/es/masonry/MasonryItem.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/masonry/MasonryItem.js" was ignored.
+2026-04-12T11:37:08.336045854Z node_modules/antd/es/typography/Base/EllipsisTooltip.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/typography/Base/EllipsisTooltip.js" was ignored.
+2026-04-12T11:37:08.336867642Z node_modules/antd/es/transfer/ListBody.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/transfer/ListBody.js" was ignored.
+2026-04-12T11:37:08.339752528Z node_modules/antd/es/upload/UploadList/index.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/upload/UploadList/index.js" was ignored.
+2026-04-12T11:37:08.366283531Z node_modules/antd/es/table/InternalTable.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/table/InternalTable.js" was ignored.
+2026-04-12T11:37:08.370501087Z node_modules/antd/es/table/hooks/useSelection.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/table/hooks/useSelection.js" was ignored.
+2026-04-12T11:37:08.750510527Z node_modules/antd/es/color-picker/components/PanelPicker/index.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/color-picker/components/PanelPicker/index.js" was ignored.
+2026-04-12T11:37:08.752597565Z node_modules/antd/es/color-picker/components/PanelPresets.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/color-picker/components/PanelPresets.js" was ignored.
+2026-04-12T11:37:08.866976946Z node_modules/antd/es/date-picker/PickerButton.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/date-picker/PickerButton.js" was ignored.
+2026-04-12T11:37:08.916125883Z node_modules/antd/es/transfer/ListItem.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/transfer/ListItem.js" was ignored.
+2026-04-12T11:37:08.919240884Z node_modules/antd/es/upload/UploadList/ListItem.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/upload/UploadList/ListItem.js" was ignored.
+2026-04-12T11:37:08.952510311Z node_modules/antd/es/table/ExpandIcon.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/table/ExpandIcon.js" was ignored.
+2026-04-12T11:37:08.953695007Z node_modules/antd/es/table/RcTable/index.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/table/RcTable/index.js" was ignored.
+2026-04-12T11:37:08.953988494Z node_modules/antd/es/table/RcTable/VirtualTable.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/table/RcTable/VirtualTable.js" was ignored.
+2026-04-12T11:37:08.954351152Z node_modules/antd/es/table/hooks/useSorter.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/table/hooks/useSorter.js" was ignored.
+2026-04-12T11:37:09.076737165Z node_modules/antd/es/color-picker/components/ColorInput.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/color-picker/components/ColorInput.js" was ignored.
+2026-04-12T11:37:09.077966953Z node_modules/antd/es/color-picker/components/ColorSlider.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/color-picker/components/ColorSlider.js" was ignored.
+2026-04-12T11:37:09.078797452Z node_modules/antd/es/color-picker/components/PanelPicker/GradientColorBar.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/color-picker/components/PanelPicker/GradientColorBar.js" was ignored.
+2026-04-12T11:37:09.424245987Z node_modules/antd/es/color-picker/components/ColorAlphaInput.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/color-picker/components/ColorAlphaInput.js" was ignored.
+2026-04-12T11:37:09.42483441Z node_modules/antd/es/color-picker/components/ColorHsbInput.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/color-picker/components/ColorHsbInput.js" was ignored.
+2026-04-12T11:37:09.425351172Z node_modules/antd/es/color-picker/components/ColorRgbInput.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/color-picker/components/ColorRgbInput.js" was ignored.
+2026-04-12T11:37:09.425997586Z node_modules/antd/es/color-picker/components/ColorHexInput.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/color-picker/components/ColorHexInput.js" was ignored.
+2026-04-12T11:37:09.753143925Z node_modules/antd/es/color-picker/components/ColorSteppers.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/color-picker/components/ColorSteppers.js" was ignored.
+2026-04-12T11:37:10.375464946Z node_modules/antd/es/table/hooks/useFilter/index.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/table/hooks/useFilter/index.js" was ignored.
+2026-04-12T11:37:10.520603916Z node_modules/antd/es/table/hooks/useFilter/FilterDropdown.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/table/hooks/useFilter/FilterDropdown.js" was ignored.
+2026-04-12T11:37:10.539223539Z node_modules/antd/es/table/hooks/useFilter/FilterSearch.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/table/hooks/useFilter/FilterSearch.js" was ignored.
+2026-04-12T11:37:10.544396237Z node_modules/antd/es/table/hooks/useFilter/FilterWrapper.js (1:0): Module level directives cause errors when bundled, "use client" in "node_modules/antd/es/table/hooks/useFilter/FilterWrapper.js" was ignored.
+2026-04-12T11:37:11.860360459Z ✓ 3182 modules transformed.
+2026-04-12T11:37:12.255341141Z rendering chunks...
+2026-04-12T11:37:12.268849928Z computing gzip size...
+2026-04-12T11:37:12.289017836Z dist/index.html                   0.46 kB │ gzip:   0.29 kB
+2026-04-12T11:37:12.289040877Z dist/assets/index-UkjWSVfH.css   14.44 kB │ gzip:   4.93 kB
+2026-04-12T11:37:12.289092698Z dist/assets/index-CWXgwS7d.js   725.47 kB │ gzip: 240.83 kB
+2026-04-12T11:37:12.289114219Z 
+2026-04-12T11:37:12.289120149Z (!) Some chunks are larger than 500 kB after minification. Consider:
+2026-04-12T11:37:12.289124519Z - Using dynamic import() to code-split the application
+2026-04-12T11:37:12.289129069Z - Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+2026-04-12T11:37:12.289132999Z - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+2026-04-12T11:37:12.289366364Z ✓ built in 6.26s
+2026-04-12T11:37:13.911382586Z ==> Uploading build...
+2026-04-12T11:37:21.345692372Z ==> Uploaded in 3.3s. Compression took 4.1s
+2026-04-12T11:37:21.371224872Z ==> Build successful 🎉
+2026-04-12T11:37:23.568815532Z ==> Deploying...
+2026-04-12T11:37:23.626704892Z ==> Setting WEB_CONCURRENCY=1 by default, based on available CPUs in the instance
+2026-04-12T11:37:39.275145818Z ==> Running 'node server.js'
+2026-04-12T11:37:40.174417132Z Server started on port 10000.
+2026-04-12T11:37:45.580570292Z ==> Your service is live 🎉
+2026-04-12T11:37:45.718971673Z ==> 
+2026-04-12T11:37:45.72120634Z ==> ///////////////////////////////////////////////////////////
+2026-04-12T11:37:45.723639521Z ==> 
+2026-04-12T11:37:45.72594858Z ==> Available at your primary URL https://weather-app-xy85.onrender.com
+2026-04-12T11:37:45.728135646Z ==> 
+2026-04-12T11:37:45.730446104Z ==> ///////////////////////////////////////////////////////////
