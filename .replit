@@ -1,0 +1,13 @@
+modules = ["nodejs-20", "web"]
+[agent]
+expertMode = true
+
+[nix]
+channel = "stable-25_05"
+
+[userenv]
+
+[userenv.shared]
+VITE_OWM_BASE_URL = "https://api.openweathermap.org/data/2.5"
+VITE_OWM_GEO_URL = "https://api.openweathermap.org/geo/1.0"
+VITE_OWM_ONECALL_URL = "https://api.openweathermap.org/data/3.0"
