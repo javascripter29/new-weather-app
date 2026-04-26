@@ -5,8 +5,36 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>weather-app</title>
+    <script>
+      window.__APP_ERROR__ = null;
+      window.addEventListener('error', function(e) {
+        window.__APP_ERROR__ = e;
+        var el = document.getElementById('js-error-display');
+        if (el) {
+          el.style.display = 'block';
+          el.innerHTML =
+            '<b>JS Error:</b> ' + e.message +
+            '<br><b>File:</b> ' + e.filename +
+            '<br><b>Line:</b> ' + e.lineno +
+            (e.error && e.error.stack ? '<br><pre style="font-size:11px;overflow:auto">' + e.error.stack + '</pre>' : '');
+        }
+      });
+      window.addEventListener('unhandledrejection', function(e) {
+        var el = document.getElementById('js-error-display');
+        if (el) {
+          el.style.display = 'block';
+          el.innerHTML =
+            '<b>Unhandled Promise Rejection:</b><br>' +
+            (e.reason ? String(e.reason) : 'Unknown error');
+        }
+      });
+    </script>
   </head>
   <body>
+    <div
+      id="js-error-display"
+      style="display:none;position:fixed;top:0;left:0;right:0;z-index:9999;background:#fee2e2;color:#7f1d1d;padding:16px;font-family:monospace;font-size:13px;border-bottom:2px solid #ef4444;"
+    ></div>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
