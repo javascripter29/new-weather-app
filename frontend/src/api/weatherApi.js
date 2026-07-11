@@ -18,8 +18,9 @@ const mapAxiosErrorToMessage = (error) => {
   const status = error?.response?.status;
 
   if (status === 401)
-    return "Ошибка доступа к OpenWeatherMap API. Проверьте API-ключ в .env";
-  if (status === 429) return "Превышен лимит запросов. Подождите минуту.";
+    return "Ошибка доступа к OpenWeatherMap API. Проверьте API-ключ.";
+  if (status === 429)
+    return "Превышен лимит запросов. Подождите минуту.";
   if (status) return "Не удалось загрузить данные. Проверьте подключение.";
   return "Не удалось загрузить данные. Проверьте подключение.";
 };
@@ -27,7 +28,7 @@ const mapAxiosErrorToMessage = (error) => {
 const requireApiKey = () => {
   if (!OWM_API_KEY || OWM_API_KEY.trim() === "") {
     throw new Error(
-      "API ключ OpenWeatherMap не найден. Проверьте переменную VITE_OWM_API_KEY в .env файле.",
+      "API ключ OpenWeatherMap не найден. Проверьте VITE_OWM_API_KEY.",
     );
   }
 };
@@ -37,27 +38,26 @@ export const getCitiesByQuery = async (q, limit = 5) => {
   const trimmed = String(q ?? "").trim();
   if (!trimmed) return [];
 
-  let response;
   try {
-    response = await geoClient.get("/direct", {
+    const response = await geoClient.get("/direct", {
       params: {
         q: trimmed,
         limit,
         appid: OWM_API_KEY,
       },
     });
+
+    return response.data ?? [];
   } catch (error) {
     throw new Error(mapAxiosErrorToMessage(error));
   }
-
-  return response.data ?? [];
 };
 
 export const reverseGeocode = async (lat, lon) => {
   requireApiKey();
-  let response;
+
   try {
-    response = await geoClient.get("/reverse", {
+    const response = await geoClient.get("/reverse", {
       params: {
         lat,
         lon,
@@ -65,20 +65,20 @@ export const reverseGeocode = async (lat, lon) => {
         appid: OWM_API_KEY,
       },
     });
+
+    const item = (response.data ?? [])[0];
+    if (!item) return null;
+
+    return {
+      name: item.name,
+      state: item.state,
+      country: item.country,
+      lat: item.lat,
+      lon: item.lon,
+    };
   } catch (error) {
     throw new Error(mapAxiosErrorToMessage(error));
   }
-
-  const item = (response.data ?? [])[0];
-  if (!item) return null;
-
-  return {
-    name: item.name,
-    state: item.state,
-    country: item.country,
-    lat: item.lat,
-    lon: item.lon,
-  };
 };
 
 export const getCurrentWeather = async (
@@ -88,9 +88,9 @@ export const getCurrentWeather = async (
   lang = "ru",
 ) => {
   requireApiKey();
-  let response;
+
   try {
-    response = await weatherClient.get("/weather", {
+    const response = await weatherClient.get("/weather", {
       params: {
         lat,
         lon,
@@ -99,11 +99,11 @@ export const getCurrentWeather = async (
         appid: OWM_API_KEY,
       },
     });
+
+    return response.data;
   } catch (error) {
     throw new Error(mapAxiosErrorToMessage(error));
   }
-
-  return response.data;
 };
 
 export const getForecast = async (
@@ -114,9 +114,9 @@ export const getForecast = async (
   lang = "ru",
 ) => {
   requireApiKey();
-  let response;
+
   try {
-    response = await weatherClient.get("/forecast", {
+    const response = await weatherClient.get("/forecast", {
       params: {
         lat,
         lon,
@@ -126,15 +126,16 @@ export const getForecast = async (
         appid: OWM_API_KEY,
       },
     });
+
+    return response.data;
   } catch (error) {
     throw new Error(mapAxiosErrorToMessage(error));
   }
-
-  return response.data;
 };
 
 export const getUvIndex = async (lat, lon) => {
   requireApiKey();
+
   try {
     const response = await weatherClient.get("/uvi", {
       params: {
@@ -145,7 +146,7 @@ export const getUvIndex = async (lat, lon) => {
     });
 
     return { current: { uvi: response.data.value } };
-  } catch (error) {
-    throw new Error(mapAxiosErrorToMessage(error));
+  } catch {
+    return { current: { uvi: null } };
   }
 };

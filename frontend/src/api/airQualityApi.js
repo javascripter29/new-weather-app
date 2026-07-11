@@ -11,8 +11,9 @@ const airClient = axios.create({
 const mapAxiosErrorToMessage = (error) => {
   const status = error?.response?.status;
   if (status === 401)
-    return "Ошибка доступа к OpenWeatherMap API. Проверьте API-ключ в .env";
-  if (status === 429) return "Превышен лимит запросов. Подождите минуту.";
+    return "Ошибка доступа к OpenWeatherMap API. Проверьте API-ключ.";
+  if (status === 429)
+    return "Превышен лимит запросов. Подождите минуту.";
   if (status) return "Не удалось загрузить данные. Проверьте подключение.";
   return "Не удалось загрузить данные. Проверьте подключение.";
 };
@@ -20,25 +21,25 @@ const mapAxiosErrorToMessage = (error) => {
 const requireApiKey = () => {
   if (!OWM_API_KEY || OWM_API_KEY.trim() === "") {
     throw new Error(
-      "API ключ OpenWeatherMap не найден. Проверьте переменную VITE_OWM_API_KEY в .env файле.",
+      "API ключ OpenWeatherMap не найден. Проверьте VITE_OWM_API_KEY.",
     );
   }
 };
 
 export const getAirQuality = async (lat, lon) => {
   requireApiKey();
-  let response;
+
   try {
-    response = await airClient.get("/air_pollution", {
+    const response = await airClient.get("/air_pollution", {
       params: {
         lat,
         lon,
         appid: OWM_API_KEY,
       },
     });
+
+    return response.data;
   } catch (error) {
     throw new Error(mapAxiosErrorToMessage(error));
   }
-
-  return response.data;
 };

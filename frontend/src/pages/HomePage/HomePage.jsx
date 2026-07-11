@@ -1,10 +1,11 @@
-import { Button, Space, Typography, Alert } from "antd";
+import { Alert, Button, Space, Typography } from "antd";
+import { AimOutlined } from "@ant-design/icons";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { SearchBar } from "../../components/SearchBar/SearchBar.jsx";
 import { WeatherCard } from "../../components/WeatherCard/WeatherCard.jsx";
-import { useGeolocation } from "../../hooks/useGeolocation.js";
 import { useFavorites } from "../../hooks/useFavorites.js";
+import { useGeolocation } from "../../hooks/useGeolocation.js";
 import { useWeatherStore } from "../../store/weatherStore.js";
 import styles from "./HomePage.module.css";
 
@@ -13,7 +14,6 @@ export const HomePage = () => {
   const { favorites } = useFavorites();
   const { isLoading, getMyLocation } = useGeolocation();
   const navigate = useNavigate();
-
   const [errorMessage, setErrorMessage] = useState("");
 
   const handleMyLocation = async () => {
@@ -22,46 +22,65 @@ export const HomePage = () => {
       const geo = await getMyLocation();
       if (!geo) return;
       dispatch({ type: "setCity", value: geo });
-      if (geo.name) {
-        navigate(`/city/${encodeURIComponent(geo.name)}`);
-      }
+      if (geo.name) navigate(`/city/${encodeURIComponent(geo.name)}`);
     } catch (error) {
-      setErrorMessage(error?.message ?? "Не удалось определить местоположение");
+      setErrorMessage(
+        error?.message ?? "Не удалось определить местоположение",
+      );
     }
   };
 
   const handleSelectCity = (cityValue) => {
-    if (!cityValue || !cityValue.name) return;
+    if (!cityValue?.name) return;
     dispatch({ type: "setCity", value: cityValue });
     navigate(`/city/${encodeURIComponent(cityValue.name)}`);
   };
 
   return (
     <div className={styles.page}>
-      <Typography.Title level={2} className={styles.title}>
-        Погода
-      </Typography.Title>
+      <section className={styles.hero}>
+        <div className={styles.heroCopy}>
+          <Typography.Text className={styles.kicker}>
+            Прогноз рядом и по всему миру
+          </Typography.Text>
+          <Typography.Title level={1} className={styles.title}>
+            Погода без лишнего шума
+          </Typography.Title>
+          <Typography.Paragraph className={styles.subtitle}>
+            Найдите город, сохраните избранное и быстро проверяйте температуру,
+            ветер, осадки и качество воздуха.
+          </Typography.Paragraph>
+        </div>
 
-      <Space orientation="vertical" size={12} style={{ width: "100%" }}>
-        <SearchBar />
-
-        <div className={styles.geoRow}>
+        <div className={styles.searchPanel}>
+          <SearchBar placeholder="Введите город" />
           <Button
-            aria-label="Моё местоположение"
+            type="primary"
+            size="large"
+            icon={<AimOutlined />}
             loading={isLoading}
             onClick={handleMyLocation}
           >
             Моё местоположение
           </Button>
         </div>
+      </section>
 
+      <Space orientation="vertical" size={16} className={styles.stack}>
         {errorMessage ? (
           <Alert type="error" showIcon message={errorMessage} />
         ) : null}
 
         {favorites.length > 0 ? (
-          <div>
-            <Typography.Text type="secondary">Избранные</Typography.Text>
+          <section className={styles.favoritesBlock}>
+            <div className={styles.sectionHeader}>
+              <Typography.Title level={3} className={styles.sectionTitle}>
+                Избранные города
+              </Typography.Title>
+              <Typography.Text className={styles.sectionHint}>
+                Быстрый переход к сохранённым прогнозам
+              </Typography.Text>
+            </div>
             <div
               className={styles.favoritesRow}
               role="list"
@@ -73,18 +92,14 @@ export const HomePage = () => {
                   type="button"
                   className={styles.favoriteBtn}
                   aria-label={`Загрузить город ${fav.name}`}
-                  tabIndex={0}
                   onClick={() => handleSelectCity(fav)}
-                  onKeyDown={(e) => {
-                    if (e.key === "Enter" || e.key === " ")
-                      handleSelectCity(fav);
-                  }}
                 >
-                  {fav.name}
+                  <span>{fav.name}</span>
+                  {fav.country ? <small>{fav.country}</small> : null}
                 </button>
               ))}
             </div>
-          </div>
+          </section>
         ) : null}
 
         {city ? <WeatherCard /> : null}

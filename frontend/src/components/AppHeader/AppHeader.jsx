@@ -7,21 +7,17 @@ import styles from "./AppHeader.module.css";
 export const AppHeader = () => {
   const navigate = useNavigate();
 
-  const handleLogoClick = () => {
-    navigate("/");
-  };
-
   return (
     <Layout.Header className={styles.header}>
       <div className={styles.inner}>
         <button
           type="button"
           className={styles.logo}
-          onClick={handleLogoClick}
+          onClick={() => navigate("/")}
           aria-label="Перейти на главную страницу"
         >
-          <Typography.Text className={styles.brand} aria-label="Weather App">
-            Weather
+          <Typography.Text className={styles.brand} aria-label="Weatherly">
+            Weatherly
           </Typography.Text>
         </button>
         <Space size={8}>
