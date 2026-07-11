@@ -5,10 +5,10 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "cd frontend && npm run dev",
+    "dev": "npm --prefix frontend run dev",
     "start": "node server.js",
-    "build": "cd frontend && npm run build",
-    "preview": "cd frontend && npm run preview"
+    "build": "npm --prefix frontend run build -- --outDir ../dist --emptyOutDir",
+    "preview": "npm --prefix frontend run preview -- --outDir ../dist"
   },
   "repository": {
     "type": "git",
