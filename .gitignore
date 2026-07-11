@@ -27,3 +27,6 @@ vite.config.js
 *.njsproj
 *.sln
 *.sw?
+.replit
+replit.md
+.agents
